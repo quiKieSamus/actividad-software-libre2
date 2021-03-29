@@ -1,0 +1,17 @@
+/*Styling for index.html*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, .container {
+    border: 2px dashed red;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
