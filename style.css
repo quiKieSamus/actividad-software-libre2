@@ -1,16 +1,18 @@
-/*Styling for index.html*/
+/*Styling for login.html*/
 
 * {
     box-sizing: border-box;
 }
 
-body, .container {
+body {
+    background-color: rosybrown;
     border: 2px dashed red;
     width: 100%;
     height: 100%;
 }
 
 .container {
+    width: 100%;
     display: flex;
     align-content: center;
     flex-direction: column;
