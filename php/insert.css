@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(44, 58, 121);
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    color: white;
+    font-family: roboto;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.documentTypes{
+    text-align: center;
+}
+
+.textBoxes{
+    display: flex;
+    justify-self: center;
+    margin-top: 10px;
+    max-width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* border: red 2px dashed; */
+}
+
+.container, .documentTypes, .textBoxes{
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    font-family: roboto;
+    font-weight: bolder;
+}
+
+.btnSubmit {
+    text-align: center;
+}
+.linkTabla{
+    margin-left: 25px;
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+    /* border: 2px dashed red; */
+    align-self: center;
+}
+
+.email{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textField{
+    text-decoration: underline;
+}
+
+button[type=submit]:hover{
+    cursor: pointer;
+}
+
+button[type=submit]{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: roboto;
+    margin: 4px 85px;
+    border-radius: 200px;
+    border: none;
+    background-color: rgb(116, 105, 99);
+}
