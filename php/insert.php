@@ -23,6 +23,7 @@
 
     <div class="container">
         <?php
+        // insert for index.html
         include '../config.php';
 
         $conn = mysqli_connect($server, $username, $password, $database);
