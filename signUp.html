@@ -9,21 +9,18 @@
 </head>
 <body>
     <body class="text-center">
-        <form class="form-signin" action="php/index.html" onsubmit="return validateBoxes()">
+        <form class="form-signin" action="insert.php" onsubmit="return validateBoxes();" method="POST">
           <img class="mb-4" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Smash_Ball.png" alt="" width="72" height="72">
-          <h1 class="h3 mb-3 font-weight-normal">Por favor, inicie sesión</h1>
+          <h1 class="h3 mb-3 font-weight-normal">Creación de cuenta</h1>
           <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Correo"  required autofocus="">
+          <input type="email" id="inputEmail" name="vEmail" class="form-control" placeholder="Correo"  required autofocus="">
           <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula y una minúscula, y una longitud mayor a 8 caracteres">
+          <input type="password" id="inputPassword" name="vPassword" class="form-control" placeholder="Contraseña" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula y una minúscula, y una longitud mayor a 8 caracteres">
           <label for="inputPassword1" class="sr-only">Password</label>
-          <input type="password" id="inputPassword1" class="form-control" placeholder="Confirmar Contraseña" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula y una minúscula, y una longitud mayor a 8 caracteres" onchange="return isPassEqual()">
+          <input type="password" id="inputPassword1" name="password1" class="form-control" placeholder="Confirmar Contraseña" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula y una minúscula, y una longitud mayor a 8 caracteres">
           <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Recuérdame
-            </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Crear cuenta</button>
           <p class="mt-5 mb-3 text-muted">© 2021</p>
         </form>
         <a href="login.html">¿Ya tienes una cuenta? Inicia sesión</a>
