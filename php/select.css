@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+    background-color: rgb(112, 129, 202);
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+.headerTop{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linkRegistro{
+    align-self: center;
+}
+
+.search, .container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /* border: red 2px dashed; */
+}
+
+label{
+    font-size: 20px;
+}
+
+.search {
+    
+    margin-bottom: 25px;
+}
+
+#txtFilter {
+    margin-left: 5px;
+}
+
+a{
+    margin-left: 25px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
