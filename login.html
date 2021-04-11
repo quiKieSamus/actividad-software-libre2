@@ -9,18 +9,13 @@
     <title>Inicia Sesión</title>
 </head>
 <body class="text-center">
-    <form class="form-signin" action="php/index.html" onsubmit="return validateBoxes()">
+    <form class="form-signin" action="select.php" onsubmit="return validateBoxes()" method="POST">
       <img class="mb-4" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Smash_Ball.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Por favor, inicie sesión</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Correo"  required autofocus="">
+      <input type="email" id="inputEmail" class="form-control" placeholder="Correo" name="vEmail"  required autofocus="">
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Recuérdame
-        </label>
-      </div>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" name="vPassword" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Ingrese una contraseña valida">
       <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button>
       <p class="mt-5 mb-3 text-muted">© 2021</p>
     </form>

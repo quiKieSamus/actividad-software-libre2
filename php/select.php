@@ -25,9 +25,6 @@
     <div class="container">
         <?php
         include '../config.php';
-        // $username = "root";
-        // $database = ""; //aqui ingresa el nombre con el que creo la base de datos
-        // $password = "";
         $mysqli = new mysqli($server, $username, $password, $database);
         $query = "SELECT * FROM asistente";
 
