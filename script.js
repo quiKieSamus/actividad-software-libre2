@@ -11,15 +11,10 @@ const validateBoxes = () => {
         alert("El campo de la contraseña no puede estar vacío");
         return false;
     }
-    return true;
-}
-
-const isPassEqual = () => {
-    if(inputPassword != inputPassword1){
+    if(inputPassword.value != inputPassword1.value){
         alert("Las contraseñas deben ser iguales");
         return false;
     }
-
     return true;
 }
 
