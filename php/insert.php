@@ -23,11 +23,9 @@
 
     <div class="container">
         <?php
-        $username = "root";
-        $database = ""; //aqui ingresa el nombre con el que creo la base de datos
-        $password = "";
+        include '../config.php';
 
-        $conn = mysqli_connect("localhost", $username, $password, $database);
+        $conn = mysqli_connect($server, $username, $password, $database);
 
         if (!$conn) {
             die("connection failed: " . mysqli_connect_error());

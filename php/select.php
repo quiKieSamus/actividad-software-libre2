@@ -24,11 +24,11 @@
     </header>
     <div class="container">
         <?php
-
-        $username = "root";
-        $database = ""; //aqui ingresa el nombre con el que creo la base de datos
-        $password = "";
-        $mysqli = new mysqli("localhost", $username, $password, $database);
+        include '../config.php';
+        // $username = "root";
+        // $database = ""; //aqui ingresa el nombre con el que creo la base de datos
+        // $password = "";
+        $mysqli = new mysqli($server, $username, $password, $database);
         $query = "SELECT * FROM asistente";
 
         echo '<table border="0" cellspacing="2" cellpadding="2" id="tableAssist"> 
